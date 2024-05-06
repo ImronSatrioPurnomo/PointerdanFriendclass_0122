@@ -4,6 +4,7 @@ using namespace std;
 
 class pelajar;
 class manusia {
+public:
 	void showNilaiPelajar(pelajar &x);
 };
 
@@ -16,3 +17,6 @@ public:
 	friend void manusia::showNilaiPelajar(pelajar &x);
 };
 
+void manusia::showNilaiPelajar(pelajar &x) {
+	std::cout << x.nilai;
+}
